@@ -137,6 +137,104 @@
       </ul>
     </section>
     
+    <section id="how-overview" class="slide" inlist="" rel="schema:hasPart" resource="#how-overview">
+        <h2 property="schema:name">Solid gives back control to the user</h2>
+        <ul>
+            <li>
+                <h3>Personal data pods</h3>
+                <span class="indent">Data is stored in personal online data storages</span>
+            </li>
+            <li>
+                <h3>Personal identity</h3>
+                <span class="indent">Users are owners of their own identity through WebID</span>
+            </li>
+            <li>
+                <h3>Data authorization</h3>
+                <span class="indent">Users can give others fine-grained access to their data</span>
+            </li>
+            <li>
+                <h3>Data is decoupled from applications</h3>
+                <span class="indent">Applications don't store data, but require permission to data pods</span>
+            </li>
+        </ul>
+    </section>
+    
+    <section id="how-pod" class="slide" inlist="" rel="schema:hasPart" resource="#how-overview">
+        <h2 property="schema:name">Freedom to locate your data anywhere</h2>
+        <img src="img/decentral.svg" alt="Decentral" height="200px" style="float: right" />
+        <ul>
+            <li>
+                <h3>Personal server</h3>
+                <span class="indent">Everyone can set up a Solid server</span>
+            </li>
+            <li>
+                <h3>Rent data storage</h3>
+                <span class="indent">Guaranteed availability</span>
+            </li>
+            <li>
+                <h3>Community server</h3>
+                <span class="indent">Limited storage space</span><br />
+                <em class="indent"><a href="https://inrupt.net/">https://inrupt.net/</a>, <a href="https://solid.community/">https://solid.community/</a></em>
+            </li>
+        </ul>
+        <h3>Data pods implement the <em><a href="https://www.w3.org/TR/ldp/">Linked Data Platform</a></em> specification</h3>
+    </section>
+    
+    <section id="how-identity" class="slide" inlist="" rel="schema:hasPart" resource="#how-identity">
+        <h2 property="schema:name">Users are in control of their own identity</h2>
+        <img src="img/loginwith.png" alt="Social media accounts" height="190px" style="float: right" />
+        <ul>
+            <li>
+                <h3>Your own WebID</h3>
+                <span class="indent">Identification and authorization with a unique URI</span>
+            </li>
+            <li>
+                <h3>Log into different places</h3>
+                <span class="indent">Applications require you to log in before they can use your personal data</span>
+            </li>
+            <li>
+                <h3>You are in control</h3>
+                <span class="indent">Account not in the hands of third-parties such as Google or Facebook</span>
+            </li>
+        </ul>
+        <h3>Uses the <em><a href="https://github.com/solid/webid-oidc-spec">WebID-OIDC Authentication</a></em> specification</h3>
+    </section>
+    
+    <section id="how-authorization" class="slide" inlist="" rel="schema:hasPart" resource="#how-authorization">
+        <h2 property="schema:name">Fine-grained access control to data</h2>
+        <ul>
+            <li>
+                <h3>Each file has a corresponding <em>Access Control List</em> (ACL) file</h3>
+                <span class="indent">Describes <em>who (WebID) has access</em> to the resource, and the <em>modes of access</em>.</span>
+            </li>
+            <li>
+                <h3>Different modes of access</h3>
+                <span class="indent">Read, write, append, control</span>
+            </li>
+            <li>
+                <h3>ACLs can inherit from ACLs in parent directories</h3>
+                <span class="indent">Makes it easier to defined scoped access</span>
+            </li>
+        </ul>
+        <h3>Uses the <em><a href="https://github.com/solid/web-access-control-spec">Web Access Control</a></em> specification</h3>
+    </section>
+    
+    <section id="how-apps" class="slide" inlist="" rel="schema:hasPart" resource="#how-apps">
+        <h2 property="schema:name">Data is decoupled from applications</h2>
+        <img src="img/social-network-central.svg" />
+        <img src="img/social-network-solid.svg" style="float:right" />
+        <ul>
+            <li>
+                <h3>Applications need to <em>ask</em> for data access</h3>
+                <span class="indent">Access can be revoked at any time</span>
+            </li>
+            <li>
+                <h3>Reduced vendor lock-in</h3>
+                <span class="indent">Other applications can work with the same data</span>
+            </li>
+        </ul>
+    </section>
+    
     <section id="index-tools" class="slide index">
       <ul>
         <li><a href="#index-history">History</a></li>
